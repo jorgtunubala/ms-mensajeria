@@ -1,33 +1,27 @@
-HELP.md
-target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+# Ignorar archivos de configuración de entorno
+.env
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
-
-### VS Code ###
+# Ignorar configuración de Visual Studio Code
 .vscode/
+
+# Ignorar archivos generados por el sistema operativo
+.DS_Store
+Thumbs.db
+
+# Ignorar directorios de compilación
+target/
+build/
+
+# Ignorar archivos de dependencia
+node_modules/
+vendor/
+
+# Ignorar archivos de log
+*.log
+
+# Ignorar archivos temporales
+*.tmp
+*.swp
+
+# Ignorar archivos de cobertura de pruebas
+coverage/
