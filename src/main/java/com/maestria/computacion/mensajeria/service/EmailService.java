@@ -10,7 +10,6 @@ import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Service;
@@ -44,7 +43,7 @@ public class EmailService {
                 String saludo = obtenerSaludo();
 
                 templateModel.put("mensaje_saludo", saludo);
-                templateModel.put("mensaje", mensaje);
+                templateModel.put("cuerpoCorreoFormateado", mensaje);
 
                 Context context = new Context();
                 context.setVariables(templateModel);

@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-  <head>
+<head>
     <title>Correo de Ejemplo</title>
-  </head>
-  <body>
-    <p th:text="${mensaje_saludo}">Buenos dias / Buenas tardes / Buenas noches</p>
-    <p th:text="${mensaje}">Mensaje por defecto</p>
-  </body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <p th:text="${mensaje_saludo}">Buenos dias / Buenas tardes / Buenas noches</p>    
+    <p th:utext="${cuerpoCorreoFormateado}"></p>
+</body>
 </html>
